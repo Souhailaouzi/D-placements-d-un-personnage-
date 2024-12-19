@@ -1,3 +1,14 @@
+package souhail;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+public class PersonnageTest{
+@Test
+public void testTournerDepuisEst() {
+    assertEquals("SUD", Personnage.tourner("EST", 1));
+}
+
+
+
 
 
 
