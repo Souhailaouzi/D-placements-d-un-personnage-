@@ -6,7 +6,14 @@ public class PersonnageTest{
 public void testTournerDepuisEst() {
     assertEquals("SUD", Personnage.tourner("EST", 1));
 }
+
+@Test
+void testTournerDepuisOuestVersNord() {
+    assertEquals("NORD", Personnage.tourner("OUEST", 1));
 }
+
+}
+
 
 
 
