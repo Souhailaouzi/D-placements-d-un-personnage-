@@ -1,11 +1,14 @@
 package souhail;
 public class Personnage{
     public static String tourner(String orientationInitiale, int fois) {
-        if ("EST".equals(orientationInitiale)) {
-            return "SUD";
+        switch (orientationInitiale) {
+            case "EST":
+                return "SUD";
+            default:
+                throw new IllegalArgumentException("Orientation inconnue : " + orientationInitiale);
         }
-        return "Orientation inconnue";
     }
+    
     
 }    
     
