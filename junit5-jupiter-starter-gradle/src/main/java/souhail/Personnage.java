@@ -4,10 +4,13 @@ public class Personnage{
         switch (orientationInitiale) {
             case "EST":
                 return "SUD";
+            case "OUEST":
+                return "NORD";
             default:
                 throw new IllegalArgumentException("Orientation inconnue : " + orientationInitiale);
         }
     }
+    
     
     
 }    
