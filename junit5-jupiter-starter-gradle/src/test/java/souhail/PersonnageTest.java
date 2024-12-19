@@ -1,6 +1,7 @@
 package souhail;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 public class PersonnageTest{
 @Test
 public void testTournerDepuisEst() {
@@ -10,6 +11,12 @@ public void testTournerDepuisEst() {
 @Test
 void testTournerDepuisOuestVersNord() {
     assertEquals("NORD", Personnage.tourner("OUEST", 1));
+}
+
+
+@Test
+void testOrientationInvalide() {
+    assertThrows(IllegalArgumentException.class, () -> Personnage.tourner("INVALID", 1));
 }
 
 }
