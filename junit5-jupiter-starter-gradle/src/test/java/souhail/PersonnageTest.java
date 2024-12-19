@@ -6,6 +6,7 @@ public class PersonnageTest{
 public void testTournerDepuisEst() {
     assertEquals("SUD", Personnage.tourner("EST", 1));
 }
+}
 
 
 
